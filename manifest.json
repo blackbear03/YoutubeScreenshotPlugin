@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube 截图工具",
+  "version": "1.0",
+  "description": "在 YouTube 视频播放器上添加截图按钮，可以截取当前视频帧并保留字幕",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "screenshot_btn.png" ],
+      "matches": [ "https://*.youtube.com/*" ]
+    }
+  ]
+}

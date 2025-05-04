@@ -1,0 +1,11 @@
+.youtube-screenshot-btn {
+  /* 使按钮稍微透明，以便更好地融入 YouTube 界面 */
+  opacity: 0.9;
+  /* 添加过渡效果，使鼠标悬停时更平滑 */
+  transition: opacity 0.2s;
+}
+
+.youtube-screenshot-btn:hover {
+  /* 鼠标悬停时完全不透明 */
+  opacity: 1;
+}

@@ -1,0 +1,11 @@
+YoutubePlugin/
+├── manifest.json        // 扩展的配置文件
+├── background.js        // 后台脚本
+├── content.js           // 内容脚本，用于操作 YouTube 页面
+├── popup.html           // 扩展的弹出窗口（可选）
+├── popup.js             // 弹出窗口的脚本（可选）
+├── styles.css           // 样式文件
+└── icons/               // 图标文件夹
+    ├── icon16.png
+    ├── icon48.png
+    └── icon128.png
